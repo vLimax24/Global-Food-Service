@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@100&family=Rubik:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+
+.container {
+    position: relative;
+    background-color: #398378;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 110px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 15px;
+}
+
+.link {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    margin-top: -9px;
+    font-weight: 600;
+}
+
+.searchbar {
+    width: 700px;
+    border-radius: 18px;
+    height: 40px;
+    padding-left: 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-top: 30px;
+    align-self: flex-start;
+}
+
+.searchbar::placeholder {
+    color: white;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLinks a:hover {
+    transition: 1s;
+    color: black;
+}
+
+#orderFood {
+    margin-right: 10px;
+}
+
+.hero-section {
+    height: 17rem;
+    width: auto;
+    background-image: url("images/background-image1.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section h1 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.hero-section p {
+    font-size: 19px;
+}
+
+.hero-section #text2 {
+    padding: 15px;
+    font-size: 17px;
+    margin: 17px;
+}
+
+#herobtn {
+    color: white(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 32px;
+    width: 134px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#herobtn:hover {
+    background: black;
+    color: white;
+}
+
+.top-deals {
+    height: 22rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-deals h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 45px;
+    margin: 20px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+  #image-track {
+    margin-top: 300px;
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none;
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navLinks {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .searchbar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+
+    #image-track {
+        left: 0;
+        margin-top: 300px;
+        padding: 0 10px;
+    }
+
+    #image-track > .image {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    #logo {
+        visibility: hidden;
+        margin-bottom: -100px;
+    }
+}
